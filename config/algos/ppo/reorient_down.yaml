@@ -1,0 +1,48 @@
+seed: 42
+torch_deterministic: False
+
+clip_observations: 5.0
+clip_actions: 1.0
+
+policy: # only works for MlpPolicy right now
+  actor_critic: 'ActorCritic'
+  pi_hid_sizes: [1024, 1024, 512]
+  vf_hid_sizes: [1024, 1024, 512]
+  activation: elu # can be elu, relu, selu, crelu, lrelu, tanh, sigmoid
+encoder:  # None
+  name: t20-retac-tmr05-bin-ft+dataset-BottleCap
+  pretrain_dir: "model/vitac/model_and_config"
+  freeze: True
+  emb_dim: 128
+  en_mode: patch
+  f_ex_mode: null
+learn:
+  agent_name: shadow_hand
+  test: False
+#  resume_model: '/home/zjunesc/LQT_PhD_WorkSpace/grasp/touch_vision_mujoco_envs/runs/bottle_cap/seed1234/checkpoint/model_6500.pt'
+  resume_model: ''
+  save_interval: 250 # check for potential saves every this many iterations
+  print_log: True
+
+  # rollout params
+  max_iterations: 5100
+  max_len: 200
+  # training params
+  cliprange: 0.2
+  ent_coef: 0
+  nsteps: 32
+  noptepochs: 5
+  nminibatches: 4 # this is per agent
+  max_grad_norm: 1
+  optim_stepsize: 3.e-4 # 3e-4 is default for single agent training with constant schedule
+  schedule: adaptive # could be adaptive or linear or fixed
+  desired_kl: 0.016
+  gamma: 0.96
+  lam: 0.95
+  init_noise_std: 0.8
+
+  n_per_env: 8
+  log_interval: 1
+  asymmetric: False
+
+using_gpu: True

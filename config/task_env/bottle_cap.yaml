@@ -1,0 +1,250 @@
+#env_params:
+task_name: 'BottleCap'  #BottleCapNonGoal
+task_description:
+  'screw bottle cap for opening or closing'
+env:
+  numEnvs: 200
+  n_env_repeat: 1
+  envSpacing: 1.5
+  episodeLength: 500
+  frame_skip: 4
+  random_prior: True
+  repose_z: True
+  enableDebugVis: True
+  aggregateMode: 1
+  success_type: one
+  full_obs: False
+  enableDisReward: True
+  enableTouchReward: True
+  enable_soft_contact: False
+  min_contacts: 1
+  reward_weight: [0.5, 1, 0.5, 0] #pos vel dis act
+  hand_bias: [-0.38, -0.02, 0.00] #37 03
+  fixed_hand: True
+  tac_theshold: 0.01
+#  masked_modality: "vis"  #vis tac
+#  tac_noise: None
+
+  asset:
+    assetRoot: "./asset"
+    assetFileNameRobot: "shadow_hand/mjcf/open_ai_assets/hand/shadow_hand_bottle.xml"
+    assetFileNameObj: "/bottlecap"
+
+  all_env_path: "asset/bottlecap/urdf/obj_info/obj_train_test_split.json"
+  object_init_height: [0.09, 0.09,0.09, 0.09, 0.09, 0.09, 0.09, 0.09, 0.09, 0.09]
+  hand_init_height: [0.23, 0.23,0.23,0.23, 0.23, 0.23, 0.23, 0.23, 0.23, 0.23]
+  object_scale: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+  goal_height: [0.16, 0.16, 0.15, 0.155, 0.16, 0.155, 0.165, 0.165, 0.16, 0.16]
+  env_dict:
+
+    - core-bottle-2722bec1947151b86e22e2d2f64c8cef
+    - core-bottle-91235f7d65aec958ca972daa503b3095
+    - core-bottle-add17b35bc4665e6f33a685c2506bbe6
+    - core-bottle-b8767b71c2216dcad317c475f024f3b8
+    - core-bottle-cf0a733f9a63f4f5664b3b9b23ddfcbc
+    - core-bottle-cf7a79435eb5b1bdb0be98650cd7fb6f
+    - core-bottle-ed55f39e04668bf9837048966ef3fcb9
+    - core-bottle-fda8d8820e4d166bd7134844380eaeb0
+    - core-bottle-77a2242bf4ea8f9fc02fe00a7187a6a9
+    - core-bottle-d8021dc9fc9109b130612f5c0ef21eb8
+
+
+  # env param
+  obs_type:
+    "VisTac"
+  obs_dim:
+    prop: 48 #propriception
+
+
+  action_dim: 20
+
+  img_w: 224
+  img_h: 224
+  #act_dim: 21
+
+  vision:
+    camera:
+      # relative to table center
+      eye: [
+        [ -0.25, 0.35, 0.5 ],
+#        [ -0.25, 0, 0.5 ], # full occlusion
+#        [0.25, 0.35, 0.5 ],
+        #        [ 0.5, 0.0, 0.05 ],
+        #        [ -0.5, 0.0, 0.05 ],
+        #        [ 0.0, 0.5, 0.05 ],
+        #        [ 0.0, -0.5, 0.05 ]
+      ]
+      lookat: [
+        [ 0.02, -0.02, 0.1 ], # camera cannot look at accurate -z
+#        [ 0.02, 0, 0.1 ], # full occlusion
+#        [ -0.02, -0.02, 0.1 ],
+        #        [ 0.0, 0.0, 0.05 ],
+        #        [ 0.0, 0.0, 0.05 ],
+        #        [ 0.0, 0.0, 0.05 ],
+        #        [ 0.0, 0.0, 0.05 ],
+      ]
+
+  random_load:
+    sequential: True
+    num_obj_per_env: 1  # maximum a * b * 4 + 1 # 257
+    obj_width: 0.1
+    a: 2 #4
+    b: 2
+
+  clip_observations: 5.0
+  clip_actions: 1.0
+
+  stiffnessScale: 1.0
+  forceLimitScale: 1.0
+  useRelativeControl: False
+  dofSpeedScale: 20.0
+  actionsMovingAverage: 1.0
+  controlFrequencyInv: 1 # 60 Hz
+
+  startPositionNoise: 0.01  # bias range 0.02 represents -2cm~2cm
+  startRotationNoise: 0.0
+
+  resetPositionNoise: 0.0
+  resetRotationNoise: 0.0
+  resetDofPosRandomInterval: 0.05 # bias range 0.05 represents -0.05rad~0.05rad
+  resetDofVelRandomInterval: 0.1 #-0.1rad/s~0.1rad/s
+
+  distRewardScale: 20
+  transition_scale: 0.5
+  orientation_scale: 0.1
+  rotRewardScale: 1.0
+  rotEps: 0.1
+  actionPenaltyScale: -0.0002
+  reachGoalBonus: 250
+  fallDistance: 0.4
+  fallPenalty: 0.0
+
+  objectType: "block" # can be block, egg or pen
+  observationType: "full_state" # can be "openai", "full_no_vel", "full", "full_state"
+  asymmetric_observations: False
+  successTolerance: 0.1
+  printNumSuccesses: False
+  maxConsecutiveSuccesses: 0
+
+task:
+  randomize: True
+  randomization_params:
+    frequency: 500   # Define how many simulation steps between generating new randomizations
+    observations:
+      range: [ 0, .002 ] # range for the white noise
+      range_correlated: [ 0, .001 ] # range for correlated noise, refreshed with freq `frequency`
+      operation: "additive"
+      distribution: "gaussian"
+      schedule: "linear"   # "constant" is to turn on noise after `schedule_steps` num steps
+      schedule_steps: 40000
+    actions:
+      range: [ 0., .05 ]
+      range_correlated: [ 0, .015 ] # range for correlated noise, refreshed with freq `frequency`
+      operation: "additive"
+      distribution: "gaussian"
+      schedule: "linear"  # "linear" will linearly interpolate between no rand and max rand
+      schedule_steps: 40000
+#    sim_params:
+#      gravity:
+#        range: [ 0, 0.4 ]
+#        operation: "additive"
+#        distribution: "gaussian"
+#        schedule: "linear"  # "linear" will linearly interpolate between no rand and max rand
+#        schedule_steps: 40000
+#    actor_params:
+#      hand:
+#        color: True
+#        tendon_properties:
+#          damping:
+#            range: [ 0.3, 3.0 ]
+#            operation: "scaling"
+#            distribution: "loguniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#          stiffness:
+#            range: [ 0.75, 1.5 ]
+#            operation: "scaling"
+#            distribution: "loguniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#        dof_properties:
+#          damping:
+#            range: [ 0.3, 3.0 ]
+#            operation: "scaling"
+#            distribution: "loguniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#          stiffness:
+#            range: [ 0.75, 1.5 ]
+#            operation: "scaling"
+#            distribution: "loguniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#          lower:
+#            range: [ 0, 0.01 ]
+#            operation: "additive"
+#            distribution: "gaussian"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#          upper:
+#            range: [ 0, 0.01 ]
+#            operation: "additive"
+#            distribution: "gaussian"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#        rigid_body_properties:
+#          mass:
+#            range: [ 0.5, 1.5 ]
+#            operation: "scaling"
+#            distribution: "uniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#        rigid_shape_properties:
+#          friction:
+#            num_buckets: 250
+#            range: [ 0.7, 1.3 ]
+#            operation: "scaling"
+#            distribution: "uniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#      object:
+#        scale:
+#          range: [ 0.95, 1.05 ]
+#          operation: "scaling"
+#          distribution: "uniform"
+#          schedule: "linear"  # "linear" will scale the current random sample by ``min(current num steps, schedule_steps) / schedule_steps`
+#          schedule_steps: 30000
+#        rigid_body_properties:
+#          mass:
+#            range: [ 0.5, 1.5 ]
+#            operation: "scaling"
+#            distribution: "uniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by ``min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+#        rigid_shape_properties:
+#          friction:
+#            num_buckets: 250
+#            range: [ 0.7, 1.3 ]
+#            operation: "scaling"
+#            distribution: "uniform"
+#            schedule: "linear"  # "linear" will scale the current random sample by `min(current num steps, schedule_steps) / schedule_steps`
+#            schedule_steps: 30000
+
+
+sim:
+  dt: 0.01667 # 1/60
+  substeps: 1
+  physx:
+    num_threads: 4
+    solver_type: 1
+    num_position_iterations: 12
+    num_velocity_iterations: 1
+    contact_offset: 0.005
+    rest_offset: 0.0
+    bounce_threshold_velocity: 0.2
+    max_depenetration_velocity: 1000.0
+    default_buffer_size_multiplier: 5.0
+    always_use_articulations: False
+
+video_path : '/videos'
+

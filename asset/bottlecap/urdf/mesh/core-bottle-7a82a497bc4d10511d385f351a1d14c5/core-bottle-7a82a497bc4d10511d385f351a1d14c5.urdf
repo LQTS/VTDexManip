@@ -1,0 +1,470 @@
+<robot name="root">
+  <link name="bottle_body">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </inertial>
+    <mass value="1.00E-02"/>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_25.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_25.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_2.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_2.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_8.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_8.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_22.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_22.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_16.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_16.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_24.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_24.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_11.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_11.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_19.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_19.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_14.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_14.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_9.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_9.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_20.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_20.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_21.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_21.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_18.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_18.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_27.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_27.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_23.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_23.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_3.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_3.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_5.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_5.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_7.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_7.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_0.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_0.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_13.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_13.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_17.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_17.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_26.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_26.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_15.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_15.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_6.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_6.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_1.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_1.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_12.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_12.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_10.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_10.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_28.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_28.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_29.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="6.00E-01 2.00E-01 2.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_29.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+  </link>
+  <link name="bottle_cap">
+    <origin xyz="0 0 0.002" rpy="0 0 0"/>
+    <mass value="1.00E-02"/>
+    <visual>
+      <origin xyz="0 0 0.002" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_4.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+      <material name="">
+        <color rgba="3.00E-01 6.00E-01 6.00E-01 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.002" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="core-bottle-7a82a497bc4d10511d385f351a1d14c5-coacd_convex_piece_4.obj" scale="1.0000E-01 1.0000E-01 1.0000E-01"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="bottle_cap_joint" type="revolute">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="bottle_body"/>
+    <child link="bottle_cap"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.00" upper="6.28"/>
+    <dynamics damping="0.05"/>
+  </joint>
+</robot>

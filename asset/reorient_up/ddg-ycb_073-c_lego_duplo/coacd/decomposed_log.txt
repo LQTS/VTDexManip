@@ -1,0 +1,33 @@
+ - Config
+	Input Path:                        /home/ruichengwang/code/mesh_process/data/meshdatav3/ddg/ycb_073-c_lego_duplo/model.obj
+	Output Path:                       /home/ruichengwang/code/mesh_process/data/meshdatav3/ddg/ycb_073-c_lego_duplo/coacd/decomposed.obj
+	Log Path:                          /home/ruichengwang/code/mesh_process/data/meshdatav3/ddg/ycb_073-c_lego_duplo/coacd/decomposed_log.txt
+	Terminal Threshold:                0.08
+	MCTS Node Number:                  20
+	MCTS Iteration:                    150
+	MCTS Max Depth:                    3
+	Manifold Preprocess (ON/OFF):      1
+	Preprocess Resolution:             10000
+	Merge Postprocess (ON/OFF):        1
+	PCA (ON/OFF):                      0
+	k for Rv:                          0.3
+	Hausdorff Sampling Resolution:     2000
+	Random Seed:                       1660761364
+ - Pre-processing (manifold)
+	resolution: 10000
+Manifold time: 0.549768s
+#Points: 31753
+#Triangles: 63502
+ - Decomposition (MCTS)
+iter 0 ---- waiting pool: 1
+iter 1 ---- waiting pool: 2
+iter 2 ---- waiting pool: 4
+iter 3 ---- waiting pool: 8
+iter 4 ---- waiting pool: 16
+iter 5 ---- waiting pool: 24
+iter 6 ---- waiting pool: 34
+iter 7 ---- waiting pool: 18
+iter 8 ---- waiting pool: 14
+iter 9 ---- waiting pool: 2
+Compute Time: 144.108s
+#Convex After Merge: 62

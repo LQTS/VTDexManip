@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<robot name="partnet_6c0328a1ea9c039cad8a06dbee1d115-1">
+	<link name="base">
+		<visual >
+			<origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+			<geometry>
+				<mesh filename="8379K1_TelescopingSlide-cut.STL" scale="2.0000E-02 2.0000E-02 2.0000E-02"/>
+			</geometry>
+		</visual>
+
+		<collision>
+			<origin xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="8379K1_TelescopingSlide-cut.STL" scale="2.0000E-02 2.0000E-02 2.0000E-02"/>
+			</geometry>
+		</collision>
+	</link>
+	<link name="link_1">
+		<visual>
+			<origin xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="8379K1_TelescopingSlide-Boss-Extrude6.STL" scale="2.0000E-02 2.0000E-02 2.0000E-02"/>
+			</geometry>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0"/>
+			<geometry>
+				<mesh filename="8379K1_TelescopingSlide-Boss-Extrude6.STL" scale="2.0000E-02 2.0000E-02 2.0000E-02"/>
+			</geometry>
+		</collision>
+	</link>
+    <joint name="joint_0" type="prismatic">
+		<origin xyz="0 0 0"/>
+		<axis xyz="0 0 -1"/>
+		<child link="link_1"/>
+		<parent link="base"/>
+		<dynamics damping="0.5" friction="5"/>
+		<limit lower="-0.016000000000000014" upper="6" />
+	</joint>
+</robot>
