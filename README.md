@@ -80,7 +80,7 @@ pip install -r requirements.txt
 
 ## Pretrained model preparation
 
-All pretrained models can be downloaded from [this url](https://1drv.ms/f/c/9054151f0ba654c9/EsZlIVlJEudEpYT2Ofl7tj8Bd8MYKIAiqCHQVB8rmLT4Uw).
+All pretrained models can be downloaded from [this url](https://1drv.ms/f/c/9054151f0ba654c9/EsZlIVlJEudEpYT2Ofl7tj8BbNErfoJZdkgG5PnZ5j6_hg).
 
 - Move the folder **“*pre_model_baselines*”** into the path **“*model/backbones”***
 - Move the folder ***“model_and_config”*** into the path ***“model/vitac”***
