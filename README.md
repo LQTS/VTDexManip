@@ -1,7 +1,6 @@
 # VTDexManip: A Dataset and Benchmark for Visual-tactile Pretraining and Dexterous Manipulation with Reinforcement Learning
 
-[Dataset](https://1drv.ms/f/c/9054151f0ba654c9/EslUpgsfFVQggJB7AQAAAAABSp31p8Fft1mtHyOwJNqmoA) ( password: vtdexmanip )               
-[Pretraining models](https://github.com/LQTS/VTDexManipPretraining) ( using the dataset )
+[Webpage](https://lqts.github.io/VTDexManip/) | [Paper](https://openreview.net/pdf?id=jf7C7EGw21) | [Dataset](https://1drv.ms/f/c/9054151f0ba654c9/EslUpgsfFVQggJB7AQAAAAABSp31p8Fft1mtHyOwJNqmoA) ( password: vtdexmanip ) | [Pretraining models](https://github.com/LQTS/VTDexManipPretraining)
 
 ---
 
