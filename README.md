@@ -84,6 +84,8 @@ All pretrained models can be downloaded from [this url](https://1drv.ms/f/c/9054
 - Move the folder **“*pre_model_baselines*”** into the path **“*model/backbones”***
 - Move the folder ***“model_and_config”*** into the path ***“model/vitac”***
 
+For pretraining codes with our dataset, please refer to the [repository](https://github.com/LQTS/VTDexManipPretraining).
+
 ## Training commands
 
 In the root directory of the project, input the command to run training scripts:
