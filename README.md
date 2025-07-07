@@ -120,7 +120,7 @@ In the root directory of the project, input the command to run evaluation script
 python eval_agent.py --task {$task_names}-{$model_name} --rl_device {$device} --resume_model {$model_path}
 
 # examples of BottleCap Turning, other tasks are similar
-python eval_agent.py -task bottle_cap-vt_all_cls --rl_device cuda:0 --resume_model runs/BottleCap/bottle_cap/bottle_cap-vt_all_cls/seed111/checkpoint/model_2000.pt
+python eval_agent.py --task bottle_cap-vt_all_cls --rl_device cuda:0 --resume_model runs/BottleCap/bottle_cap/bottle_cap-vt_all_cls/seed111/checkpoint/model_2000.pt --test --seed 111
 ```
 
 # Contact

@@ -25,14 +25,15 @@ def eval_policy(max_trajs=100):
     logger = DataLog()
     assert os.path.isdir(args.logger_dir)
 
-    # model_path = os.path.join(args.logger_dir, 'checkpoint')
+    logger.log_kv('model', f'{os.path.basename(args.resume_model)[:-3]}')
+    # set up policy
+    sarl = process_sarl(args, env, args.models, args.logger_dir)
+    sarl.eval(logger, max_trajs=max_trajs, record_video = False)
 
-    while True:
-        # args.resume_model = os.path.join(model_path, f'model_{2000}.pt')
-        # set up policy
-        sarl = process_sarl(args, env, args.models, args.logger_dir)
-        sarl.eval(logger, max_trajs=max_trajs, record_video = False)
-
+    # del sarl
+    save_path = args.logger_dir
+    print(save_path)
+    logger.save_log(save_path, "evaluation")
 
 
 if __name__ == '__main__':
